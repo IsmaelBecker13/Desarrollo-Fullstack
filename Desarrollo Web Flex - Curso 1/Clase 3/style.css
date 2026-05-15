@@ -1,0 +1,51 @@
+/* Reset */
+/* *
+{
+    margin: 10 px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section-box{
+    background-color: blue;
+}
+.box
+{
+    font-size: 2rem;
+    background-color: rgb(252, 131, 131);
+    border-top: red solid 5px;
+    border-left: orange 10px solid;
+    border-bottom: cyan 8px dotted;
+    border-right: green 1px dashed;
+    padding: 100px 250px 5px 35px;
+
+} */
+
+/*Reset*/
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.padreFlex
+{
+    background-color: tomato;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hijoFlex
+{
+    width: 80px;
+    height: 80px;
+    border: inset black 3px;
+    background-color: cornflowerblue;
+}
+
+.self
+{
+    align-self: flex-start;
+}

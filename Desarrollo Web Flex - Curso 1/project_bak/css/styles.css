@@ -1,0 +1,87 @@
+/* Comentario de css */
+
+/* Selector mediante etiqueta --> Generalidad
+selector {
+    propiedad: valor,
+    propiedad2: valor,
+}*/
+
+
+/* Selector mediante clase --> Especifidad -> peso mayor que etiqueta
+.clase {
+    propiedad: valor,
+    propiedad2: valor,
+}
+
+tambien esta por id, pero no se puede repetir
+*/
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body
+{
+    font-family: "Poppins";
+}
+
+.logo{
+    width: 100px;
+}
+
+.list-nav
+{
+    list-style: none;
+}
+
+.list-nav li a
+{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header
+{
+    background-color: rgb(8, 38, 37);
+}
+
+h1
+{
+    background-color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    color: white
+}
+.section1
+{
+    background-color: rgb(8, 38, 37);
+    color: white;
+}
+
+.section1 img
+{
+    
+    width: 800px;
+}
+
+.contenedor
+{
+    background-color: aquamarine;
+    width: 350px;
+}
+
+
+.porcentaje
+{
+    background-color: blueviolet;
+    width: 75%;
+}
+
+.pixel
+{
+    width: 200px;
+    background-color: green;
+}
+
+.viewport
+{
+    background-color: bisque;
+    width: 75vw;
+}
