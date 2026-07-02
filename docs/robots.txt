@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ismaelbecker13.github.io/Desarrollo-Fullstack/sitemap.xml
