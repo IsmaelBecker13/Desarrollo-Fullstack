@@ -47,6 +47,7 @@ header
     font-size: 20px;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 header img{
@@ -122,11 +123,9 @@ header img{
     gap: 15px;;
 }
 
-.highlightChild img
-{
-    width: 850px;
-    border-radius:5px
-}
+
+
+
 /* Pie de pagina */
 
 
@@ -165,3 +164,4 @@ footer
     height: 50%;
     gap: 10px;
 }
+
