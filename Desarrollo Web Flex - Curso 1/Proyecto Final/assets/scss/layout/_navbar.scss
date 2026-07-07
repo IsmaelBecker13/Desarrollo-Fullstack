@@ -1,0 +1,18 @@
+nav{
+    padding: 20px;
+}
+.navbar-class
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: $color-background;
+}
+
+.navbar-class a {
+  color: $color-font-title;
+  font-family: $font-body;
+  font-size: 1.25rem;
+}

@@ -1,0 +1,76 @@
+.show-champs
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-grid{
+        margin: 1rem;
+        display: grid;
+        grid-template-rows: repeat(10, 1050px);
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
+    }
+    &-row{
+        margin: 1rem;
+        display: grid;
+        grid-template-rows: repeat(1, 1050px);
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
+    }    
+    h1
+    {
+        font-size: 3rem;
+        color: #ffffff;
+        font-family: $font-body;
+    }    
+    h2
+    {
+        font-size: 3rem;
+    }      
+    &-box{
+        background-color: rgba($color: #000000, $alpha: 0.75);
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &-image{
+        height: 100%;
+        flex: 0 0 65%;
+        img {
+        height: 100%;
+        object-fit: cover;
+        display: block;        
+        }        
+        padding: 0.5rem;
+    }
+    &-description
+    {
+        flex: 0 0 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        p{
+            text-align: justify;
+        }
+        padding: 0.5rem;
+    }
+    &-graphs{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        img{
+            width: 64px;
+            height: auto;
+        }
+    }
+}
