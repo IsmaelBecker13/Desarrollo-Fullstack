@@ -1,0 +1,25 @@
+Gradientes
+• https://cssgradient.io/
+• https://mycolor.space
+*https://uigradients.com/#Dusk
+*https://haikei.app/
+*https://grabient.com/?tags=%5B%22Autumn%22%5D
+*https://color.adobe.com/es/create/image-gradient
+*https://cssgradient.io/blog/css-gradient-text/  (para texto)
+
+Librerias
+• https://animate.style/ 
+• https://michalsnik.github.io/aos/ 
+• https://animista.net/
+• https://kristofferandreasen.github.io/wickedCSS/
+• https://elrumordelaluz.github.io/csshake/
+• https://vaibhav111tandon.github.io/vov.css/
+
+
+Efectos visuales/texturas
+https://prismic.io/blog/css-hover-effects
+• https://getwaves.io/
+• https://uiverse.io/
+• https://fotorama.io/
+• https://app.haikei.app/
+• https://cssgenerator.org/

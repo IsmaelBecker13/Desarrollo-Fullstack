@@ -1,0 +1,110 @@
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+/* h1{
+    text-align: center;
+    color:  fuchsia;
+    animation-name: efecto;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes efecto{
+    0%{
+        color:green;
+    }
+    25%{
+        color:red;
+    }
+    50%{
+        color:blue;
+    }
+    75%{
+        color:aqua;
+    }
+    100%{
+        color:orange;
+    }
+}
+h1:hover
+{
+    color: aqua;
+    transform: translateX(20px);
+} */
+
+.gradiente{
+    border: black solid 5px;
+    /* background: radial-gradient(red, violet, blueviolet) */
+    background-image: url(./img/charizard.jpg);
+    background-size: contain;
+    transition: 2s;
+}
+.gradiente:hover{
+    border: black solid 5px;
+    /* background: radial-gradient(red, violet, blueviolet) */
+    background-image: url(./img/coraje.jpg);
+    background-size: contain;
+     transition: 2s;
+}
+/*1ro eje x (horizontal) 2do eje y (vertical) */
+.trasladar
+{
+    margin-top: 20px;
+    border: black solid 5px;
+}
+.trasladar:hover
+{
+    transform: translate(50px, 45px);
+}
+/* unidad de rotacion "deg" */
+.rotar
+{
+    border: green solid 5px;
+}
+.rotar:hover
+{
+    transform: rotate(45deg);
+}
+/* valores mayores a1 agranda, entre 1 y 0 achica */
+.escalar
+{
+    border: rgb(81,50,192) solid 5px;
+}
+.escalar:hover
+{
+    border: rgb(81,50,192) solid 5px;
+    transform: scale(2,2);
+}
+/*modificar angulos*/
+.sesgar
+{
+    border: red solid 5px;
+}
+.sesgar:hover
+{
+    transform: skew(-20deg, -30deg);
+}
+
+
+/* ----------------------------------------------------------- */
+
+
+.charizard
+{
+
+}
+
+.rotate-center{-webkit-animation:rotate-center .6s ease-in-out both;animation:rotate-center .6s ease-in-out both}
+
+@-webkit-keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}

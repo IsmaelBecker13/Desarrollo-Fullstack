@@ -1,0 +1,45 @@
+/* Comentario css SE TRADUCE */
+// Comentario sass NO SE TRADUCE
+
+// Nesting anidado que permite anidar con especificidad
+// contenedor{
+//     propiedades
+//     hijos{
+//             propiedades
+//     }
+// }
+
+
+header
+{
+    background-color: #285A48;
+;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    .logo_word
+    {
+        text-transform: uppercase;
+        font-weight: 100;
+        display: flex;
+        align-items: center;
+    }
+    nav
+    {
+        width: 25%;
+        .list-nav
+        {
+             height: 100%;
+            a{
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                padding: 10px;
+            }
+        }
+    }
+
+}

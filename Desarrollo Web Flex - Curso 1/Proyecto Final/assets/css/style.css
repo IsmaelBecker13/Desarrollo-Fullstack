@@ -1,0 +1,662 @@
+@font-face {
+  font-family: "Beaufort";
+  src: url("../fonts/BeaufortforLOL-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Spiegel";
+  src: url("../fonts/Spiegel-Regular.ttf") format("truetype");
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+header {
+  color: #000000;
+}
+
+body {
+  font-family: "Spiegel", sans-serif;
+  background-color: #0a1216;
+  color: #ffffff;
+}
+
+h1, h3 {
+  font-family: "Beaufort", sans;
+  color: #fad65f;
+}
+
+h2 {
+  font-family: "Spiegel", sans-serif;
+  color: #fad65f;
+}
+
+nav {
+  padding: 20px;
+}
+
+.navbar-class {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #0a1216;
+}
+
+.navbar-class a {
+  color: #fad65f;
+  font-family: "Spiegel", sans-serif;
+  font-size: 1.25rem;
+}
+
+.btn-primary {
+  background-color: #0a1216;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  color: #fad65f;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+.role-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+  margin: 32px;
+}
+
+.btn-role, .btn-role-support, .btn-role-marksman, .btn-role-mage, .btn-role-tank, .btn-role-fighter, .btn-role-assasin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  gap: 16px;
+}
+.btn-role h3, .btn-role-support h3, .btn-role-marksman h3, .btn-role-mage h3, .btn-role-tank h3, .btn-role-fighter h3, .btn-role-assasin h3 {
+  text-align: center;
+}
+.btn-role, .btn-role-support, .btn-role-marksman, .btn-role-mage, .btn-role-tank, .btn-role-fighter, .btn-role-assasin {
+  transition: transform 0.01s ease-out;
+}
+.btn-role img, .btn-role-support img, .btn-role-marksman img, .btn-role-mage img, .btn-role-tank img, .btn-role-fighter img, .btn-role-assasin img {
+  opacity: 0.75;
+  transition: opacity 0.01s ease-out;
+}
+.btn-role:hover, .btn-role-support:hover, .btn-role-marksman:hover, .btn-role-mage:hover, .btn-role-tank:hover, .btn-role-fighter:hover, .btn-role-assasin:hover {
+  transform: scale(1.2);
+}
+.btn-role:hover img, .btn-role-support:hover img, .btn-role-marksman:hover img, .btn-role-mage:hover img, .btn-role-tank:hover img, .btn-role-fighter:hover img, .btn-role-assasin:hover img {
+  opacity: 1;
+}
+
+.know-champs:has(.btn-role-assasin:hover) .champ-img {
+  background-image: url("../img/akali.png");
+  transform: scale(1.05);
+}
+
+.know-champs:has(.btn-role-fighter:hover) .champ-img {
+  background-image: url("../img/yasuo.png");
+  transform: scale(1.05);
+}
+
+.know-champs:has(.btn-role-marksman:hover) .champ-img {
+  background-image: url("../img/jinx.png");
+  transform: scale(1.05);
+}
+
+.know-champs:has(.btn-role-support:hover) .champ-img {
+  background-image: url("../img/thresh.png");
+  transform: scale(1.05);
+}
+
+.know-champs:has(.btn-role-tank:hover) .champ-img {
+  background-image: url("../img/leona.png");
+  transform: scale(1.05);
+}
+
+.know-champs:has(.btn-role-mage:hover) .champ-img {
+  background-image: url("../img/lux.png");
+  transform: scale(1.05);
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+  background-color: #0a1216;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero h2 {
+  font-size: 3rem;
+}
+.hero p {
+  max-width: 700px;
+  font-size: 1.2rem;
+}
+.hero--1 {
+  background-image: url("../img/1.jpg");
+}
+.hero--2 {
+  background-image: url("../img/2.jpg");
+}
+.hero--3 {
+  background-image: url("../img/3.jpg");
+}
+.hero--4 {
+  background-image: url("../img/4.jpg");
+}
+.hero--5 {
+  background-image: url("../img/5.jpg");
+}
+
+.hero-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  gap: 20px;
+  padding: 20px;
+}
+
+.know-champs {
+  font-family: "Helvetica", sans;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.know-champs h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  font-family: "Spiegel", sans-serif;
+}
+.know-champs h2 {
+  font-size: 2rem;
+}
+.know-champs h3 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: "Helvetica", sans;
+  font-weight: 100;
+}
+.know-champs p {
+  color: #ffffff;
+  font-size: 1rem;
+}
+.know-champs > * {
+  flex: 50%;
+  min-width: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.champ-description {
+  padding: 50px;
+}
+
+.champ-background {
+  height: 558px;
+  background-image: url("../img/backgrounds/background2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.champ-img {
+  width: 100%;
+  min-height: 400px;
+  background-image: url("../img/akali.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+
+.know-regions {
+  text-align: center;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.know-regions h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  font-family: "Spiegel", sans-serif;
+}
+.know-regions h2 {
+  font-size: 2rem;
+}
+.know-regions p {
+  text-align: justify;
+  font-size: 1rem;
+}
+.know-regions-description {
+  padding: 32px;
+  margin-right: 110px;
+  margin-left: 110px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+}
+.know-regions {
+  background-image: url("../img/backgrounds/background1.png");
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.regions-summary {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 400px;
+  grid-template-columns: 2% 32% 32% 32% 2%;
+}
+.regions-summary h3 {
+  font-family: "Spiegel", sans-serif;
+  font-style: normal;
+}
+.regions-summary-noxus {
+  grid-row: 1/1;
+  grid-column: 2/2;
+}
+.regions-summary-demacia {
+  grid-row: 1/1;
+  grid-column: 3/3;
+}
+.regions-summary-piltover {
+  grid-row: 1/1;
+  grid-column: 4/4;
+}
+.regions-summary-box {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.know-library {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+.know-library video {
+  width: 100%;
+  display: block;
+}
+.know-library {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.know-library-card {
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.know-library-card > * {
+  flex: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  text-align: justify;
+}
+
+.centered-separator {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-regions-title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/backgrounds/background3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  gap: 1rem;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.show-regions-title img {
+  width: 25%;
+}
+.show-regions-title h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Spiegel", sans-serif;
+  font-weight: 100;
+}
+.show-regions-title h1 span:first-child {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.show-regions-title h1 span:last-child {
+  font-size: 3rem;
+}
+.show-regions-demacia {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+.show-regions-demacia p {
+  line-height: 1.5;
+}
+.show-regions-demacia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.show-regions-demacia h1 {
+  font-family: "Spiegel", sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+}
+.show-regions-demacia h2 {
+  color: #ffffff;
+  font-family: "Spiegel", sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+}
+.show-regions-demacia-icon {
+  height: 25%;
+  object-fit: contain;
+}
+.show-regions-demacia-row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 800px;
+}
+.show-regions-demacia-row2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+  padding: 2rem;
+  outline: 1px solid #fad65f;
+}
+.show-regions-demacia-row3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+  padding: 2rem;
+  gap: 1rem;
+}
+.show-regions-demacia-row3 img {
+  width: 30%;
+}
+.show-regions-demacia-row4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+  gap: 1rem;
+}
+.show-regions-demacia-champs {
+  line-height: 1.5;
+}
+.show-regions-demacia-champs h2 {
+  margin-bottom: 8px;
+  color: #fad65f;
+}
+.show-regions-demacia-champs p {
+  margin-bottom: 16px;
+}
+.show-regions-demacia-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+  height: 40%;
+  gap: 1rem;
+  padding: 2rem;
+}
+.show-regions-demacia-intro-img {
+  height: 500px;
+  width: 50%;
+}
+.show-regions-demacia-intro-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  outline: 1px solid #fad65f;
+}
+.show-regions-demacia-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  width: 40%;
+  height: 40%;
+  gap: 1rem;
+}
+.show-regions-demacia-about-img {
+  outline: 1px solid #fad65f;
+  width: 60%;
+  height: 500px;
+}
+.show-regions-demacia-about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.show-regions-demacia-pillars {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.show-regions-demacia-pillars img {
+  width: 96px;
+  height: auto;
+}
+.show-regions-demacia-pillars-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  gap: 1rem;
+}
+.show-regions-demacia-pillars-description h1 {
+  text-align: center;
+  font-family: "Spiegel", sans-serif;
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+.show-regions-demacia-pillars > * {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  gap: 1rem;
+}
+.show-regions-top, .show-regions-top-zaun, .show-regions-top-piltover, .show-regions-top-noxus, .show-regions-top-bandle, .show-regions-top-waterloo, .show-regions-top-demacia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  gap: 1rem;
+  width: 100%;
+}
+.show-regions-top-demacia {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/backgrounds/background4.png");
+}
+.show-regions-top-waterloo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/backgrounds/background7.png");
+}
+.show-regions-top-bandle {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/backgrounds/background10.png");
+}
+.show-regions-top-noxus {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/backgrounds/background13.png");
+}
+.show-regions-top-piltover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/backgrounds/background16.png");
+}
+.show-regions-top-zaun {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/backgrounds/background19.png");
+}
+.show-regions-down {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.show-champs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.show-champs-grid {
+  margin: 1rem;
+  display: grid;
+  grid-template-rows: repeat(10, 1050px);
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+.show-champs-row {
+  margin: 1rem;
+  display: grid;
+  grid-template-rows: repeat(1, 1050px);
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+.show-champs h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  font-family: "Spiegel", sans-serif;
+}
+.show-champs h2 {
+  font-size: 3rem;
+}
+.show-champs-box {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.show-champs-image {
+  height: 100%;
+  flex: 0 0 65%;
+}
+.show-champs-image img {
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.show-champs-image {
+  padding: 0.5rem;
+}
+.show-champs-description {
+  flex: 0 0 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.show-champs-description h2 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.show-champs-description p {
+  text-align: justify;
+}
+.show-champs-description {
+  padding: 0.5rem;
+}
+.show-champs-graphs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.show-champs-graphs img {
+  width: 64px;
+  height: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,66 @@
+// media queries
+
+//Extend
+
+.boton-rojo{
+    width: 100px;
+    height: 60px;
+    border: solid black 2px;
+    border-radius: 20%;
+    color: black;
+    background-color: red($color: #000000);
+}
+
+// .boton-verde
+// {
+//     width: 100px;
+//     height: 60px;
+//     border: solid black 2px;
+//     border-radius: 20%;
+//     color: black;
+//     background-color: green($color: #000000);
+// }
+
+.boton-verde
+{
+    @extend .boton-rojo;
+    background-color: green($color: #000000);
+}
+
+//Mixin
+
+//sin parametros
+@mixin tamanio
+{
+    width: 50%;
+    height: auto;
+}
+
+.card1
+{
+    @include tamanio;
+}
+
+// Con parametros
+@mixin caja ($alto, $ancho)
+{
+    width: $ancho;
+    height: $alto;
+}
+
+.card2
+{   
+    @include caja(70%, 25%)
+}
+
+@mixin flex($direccion, $justy, $align)
+{
+    flex-direction: $direccion;
+    justify-content: $justy;
+    align-items: $aling;
+}
+
+section
+{
+    @include flex(row, center, flex-end)
+}
